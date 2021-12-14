@@ -1,0 +1,27 @@
+{% extends 'BaseSign.html' %}
+
+{% block title %}Sign UP{% endblock %}
+
+{% block body %}
+<main class="form-signin">
+        <form method="post">
+        <h1 class="h3 mb-3 fw-normal">Sign up</h1>
+        <div class="form-floating mb-1">
+            <input name="name" id="name" type="text" class="form-control" placeholder="name">
+            <label name="name" for="floatingInput">Name</label>
+        </div>
+        <div class="form-floating mb-1">
+            <input name="login" id="login" type="email" class="form-control" placeholder="login">
+            <label name="login" for="floatingInput">Email</label>
+        </div>
+        <div class="form-floating mb-1">
+            <input name="password" id="password" type="password" class="form-control" placeholder="Password">
+            <label name="password1" for="floatingPassword">Password</label>
+        </div>
+        <button class="w-100 btn btn-lg btn-primary mb-1" type="submit">Sign up</button>
+        <a href="/">
+            <button class="w-100 btn btn-lg btn-outline-danger mb-1" type="button">Cancel</button>
+        </a>
+        </form>
+</main>
+{% endblock %}
